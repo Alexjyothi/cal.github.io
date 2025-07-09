@@ -342,3 +342,36 @@ h1 {
         justify-content: center;
     }
 }
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.category-card {
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+.tool-card {
+    animation: fadeInUp 0.5s ease-out both;
+}
+
+@keyframes rainbow {
+    0% { color: #FF6B6B; }
+    20% { color: #FF8E53; }
+    40% { color: #FFC154; }
+    60% { color: #47B8E0; }
+    80% { color: #7F53AC; }
+    100% { color: #FF6B6B; }
+}
+
+.rainbow-text span {
+    display: inline-block;
+    animation: rainbow 3s infinite;
+}
